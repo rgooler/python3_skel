@@ -9,4 +9,4 @@ RUN apt-get update -y && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
-CMD ["/usr/bin/python3", "/app/main.py"]
+CMD ["/usr/bin/python3", "-u", "/app/main.py"]
